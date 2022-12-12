@@ -1,23 +1,32 @@
 import PropTypes from "prop-types";
-import clsx from "clsx";
+import FriendListItem from "./FriendListItem/FriendListItem";
 import css from "./FriendList.module.css";
 
+const FriendList = ({friends}) => {
 
+    return(
+        <div className={css.friends}>
+            <ul className={css.friends__list}>
+                {friends.map(friend => (
+                    <FriendListItem 
+                    key = {friend.id}
+                    isOnline = {friend.isOnline}
+                    avatar = {friend.avatar}
+                    name = {friend.name}
+                    />
+                ))}
 
-export default function FriendList(props) {
-    const { isOnline, avatar, name } = props
-
-    return (
-        <li className={css.friend__item}>
-            <span className={clsx(css.friends__status, isOnline ? css.friend__online : css.friend__offline)}></span>
-            <img className={css.friend__avatar} src={avatar} alt={name} width="50"/>
-            <p className={css.friends__name}>{name}</p>
-        </li>
+            </ul>
+        </div>
     )
 }
 
 FriendList.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+        })
+    )
 }
+
+export default FriendList;

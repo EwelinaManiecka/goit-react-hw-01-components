@@ -18,7 +18,7 @@
     text-transform: uppercase;
 }
 
-.stats__list {
+.stat__list {
     display: flex;
     justify-content: center;
 }
