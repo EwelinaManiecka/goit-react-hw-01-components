@@ -1,63 +1,63 @@
 .App {
-    margin: auto;
+  margin: auto;
 }
 
 .profile {
-    margin: 20px auto;
-    text-align: center;
-    width: 340px;
-    border-radius: 10px;
-    border: 3px solid burlywood;
-    border-color: brown;
-    background-color: antiquewhite;
-    box-shadow: 0 5px 5px rgb(97, 24, 24);
+  margin: 20px auto;
+  text-align: center;
+  width: 340px;
+  border-radius: 10px;
+  border: 3px solid burlywood;
+  border-color: brown;
+  background-color: antiquewhite;
+  box-shadow: 0 5px 5px rgb(97, 24, 24);
 }
 
 .description {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid brown
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid brown;
 }
 
 .name {
-    margin-top: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
+  margin-top: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .stats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: bisque;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 0;
 }
 
 .stats li {
-    margin: 5px;
-    padding: 10px;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-top: 3px solid brown;
+  margin: 5px;
+  padding: 10px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 3px solid brown;
 }
 
 .stats li:not(:last-child) {
-    border-right: 3px solid brown;
+  border-right: 3px solid brown;
 }
 
 .quantity {
-    font-weight: 600;
-    font-size: 20px;
+  font-weight: 600;
+  font-size: 20px;
 }
